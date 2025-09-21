@@ -1,4 +1,4 @@
-import "../styles/Board.css";
+import "../styles/components/Board.css";
 import { Square } from "./Square";
 
 export function Board({ board, onSquareClick, winner }) {

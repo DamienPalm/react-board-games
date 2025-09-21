@@ -1,4 +1,4 @@
-import "../styles/Square.css";
+import "../styles/components/Square.css";
 
 export function Square({ value, onClick, isWinning }) {
   return (

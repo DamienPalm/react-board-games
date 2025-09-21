@@ -1,4 +1,4 @@
-import "../styles/ScoreBoard.css";
+import "../styles/components/ScoreBoard.css";
 
 export function ScoreBoard({ gameCount }) {
   return (
