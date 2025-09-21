@@ -1,6 +1,9 @@
 .square__button {
     background: white;
     border: 1px solid black;
+    aspect-ratio: 1;
+    min-width: 80px;
+    font-size: 2rem;
 }
 
 .square__button--winning {
