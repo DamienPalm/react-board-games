@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { calculateWinner, isDraw, isValidMove } from "../utils/gameLogic";
 
 export function useTicTacToe() {
-  const [board, setBoard] = useState(Array(9).fill(null));
-  const [isXNext, setIsXNext] = useState(true);
-  const [winner, setWinner] = useState(null);
-  const [gameCount, setGameCount] = useState({ X: 0, O: 0, draws: 0 });
+  const [board, setBoard] = useState(Array(9).fill(null)); // Etat initial du plateau
+  const [isXNext, setIsXNext] = useState(true); // Determine quel joueur va jouer
+  const [winner, setWinner] = useState(null); // Determine le gagnat de la partie
+  const [gameCount, setGameCount] = useState({ X: 0, O: 0, draws: 0 }); // Compteur de parties
 
   const makeMove = (index) => {
     // 1. vérifier si le coup est valide
