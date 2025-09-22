@@ -1,7 +1,9 @@
 import "../styles/components/Board.css";
+import { getWinningLine } from "../utils/gameLogic";
 import { Square } from "./Square";
 
 export function Board({ board, onSquareClick, winner }) {
+  const winningLine = getWinningLine(board);
   return (
     <div className="board">
       {board.map((value, index) => (
@@ -9,7 +11,7 @@ export function Board({ board, onSquareClick, winner }) {
           key={index}
           value={board[index]}
           onClick={() => onSquareClick(index)}
-          isWinning={false}
+          isWinning={winningLine.includes(index)}
         />
       ))}
     </div>
